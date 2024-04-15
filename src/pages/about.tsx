@@ -12,7 +12,7 @@ const AboutPage: React.FC<PageProps> = () => {
         <Layout pageTitle={title}>
             <p>Ello! I'm sorry to have to tell you this, but it simply couldn't work out between us!</p>
             <p>Here is a pretty woman for you!</p>
-            {GalleryImage(3)}
+            <GalleryImage index={3} />
         </Layout>
     )
 }

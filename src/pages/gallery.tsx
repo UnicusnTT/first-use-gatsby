@@ -10,7 +10,7 @@ const title = "Pretty Women"
 const Gallery: React.FC<PageProps> = () => {
     return (
         <Layout pageTitle={title}>
-            <GalleryArray take={5}></GalleryArray>
+            <GalleryArray take={4}/>
         </Layout>
     )
 }
