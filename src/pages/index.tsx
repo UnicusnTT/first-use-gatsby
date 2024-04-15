@@ -3,13 +3,13 @@ import { HeadFC, PageProps, } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import GalleryImage from "../components/galleryImage"
+import GalleryImage, { getGalleryLength } from "../components/galleryImage"
 
 const title = "Home Page"
 
 const IndexPage: React.FC<PageProps> = () => {
   const [index, setIndex] = React.useState(0);
-  const maxIndex = GalleryImage({getLength: true}) as number - 1;
+  const maxIndex = getGalleryLength() - 1;
 
   const handleIndexChange = () => {
     if (index >= maxIndex) {
